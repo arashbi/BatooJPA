@@ -284,6 +284,7 @@ public class EntityManagerFactoryImpl implements EntityManagerFactory {
 		dataSource.setJdbcUrl(jdbcUrl);
 		dataSource.setUsername(jdbcUser);
 		dataSource.setPassword(jdbcPassword);
+		dataSource.setStatementsCacheSize(50);
 
 		return dataSource;
 	}
